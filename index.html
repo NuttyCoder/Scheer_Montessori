@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scheer Montessori</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Scheer Montessori</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#academics">Academics & Tech</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="login">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="loginError" style="display:none;">Invalid username or password.</div>
+        </section>
+        <section id="studentArea" style="display:none;">
+            <h2>Student Progress</h2>
+            <div id="reportCard">
+                <h3>Report Card</h3>
+                <p>Math: A</p>
+                <p>Science: B+</p>
+                <p>English: A-</p>
+                <!-- Add more subjects as needed -->
+            </div>
+            <div id="messaging">
+                <h3>Message Area</h3>
+                <form id="messageForm">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+                <div id="messageList">
+                    <!-- Messages will be displayed here -->
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Scheer Montessori</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
